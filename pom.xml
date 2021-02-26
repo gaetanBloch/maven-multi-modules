@@ -12,6 +12,7 @@
 
   <modules>
     <module>jpa-entities</module>
+    <module>dummy</module>
   </modules>
 
   <properties>
