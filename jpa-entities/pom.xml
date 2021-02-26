@@ -12,8 +12,6 @@
 
   <artifactId>jpa-entities</artifactId>
 
-  <packaging>jar</packaging>
-
   <dependencies>
 
     <!--Hibernate-->

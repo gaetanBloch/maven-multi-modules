@@ -11,8 +11,9 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>jpa-entities</module>
     <module>dummy</module>
+    <module>jpa-entities</module>
+    <module>web-api-xml</module>
   </modules>
 
   <properties>
