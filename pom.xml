@@ -14,6 +14,7 @@
     <module>dummy</module>
     <module>jpa-entities</module>
     <module>web-api-xml</module>
+    <module>web-api-json</module>
   </modules>
 
   <properties>
