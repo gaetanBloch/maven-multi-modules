@@ -7,7 +7,7 @@
   <parent>
     <artifactId>maven-multi-modules</artifactId>
     <groupId>com.gbloch</groupId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${revision}</version>
   </parent>
 
   <artifactId>converters</artifactId>
@@ -20,12 +20,12 @@
     <dependency>
       <groupId>com.gbloch</groupId>
       <artifactId>jpa-entities</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>com.gbloch</groupId>
       <artifactId>web-api-xml</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>${project.version}</version>
     </dependency>
 
     <!--MapStruct-->
