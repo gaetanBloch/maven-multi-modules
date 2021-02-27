@@ -18,14 +18,12 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-agroal</artifactId>
-      <version>5.4.28.Final</version>
     </dependency>
 
     <!--Lombok-->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.18</version>
       <scope>provided</scope>
     </dependency>
 

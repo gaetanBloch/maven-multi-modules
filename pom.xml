@@ -21,12 +21,72 @@
 
   <properties>
     <revision>1.0-SNAPSHOT</revision>
+
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.report.outputEncoding>UTF-8</project.report.outputEncoding>
+
     <java.version>11</java.version>
+    <mapstruct.version>1.4.2.Final</mapstruct.version>
+    <lombok.version>1.18.18</lombok.version>
+    <hibernate.version>5.4.28.Final</hibernate.version>
+    <jaxb.version>3.0.0</jaxb.version>
+    <jaxb-api.version>2.3.1</jaxb-api.version>
+    <json.version>2.12.1</json.version>
+
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
   </properties>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <!--MapStruct-->
+      <dependency>
+        <groupId>org.mapstruct</groupId>
+        <artifactId>mapstruct</artifactId>
+        <version>${mapstruct.version}</version>
+      </dependency>
+
+      <!--Hibernate-->
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-agroal</artifactId>
+        <version>${hibernate.version}</version>
+      </dependency>
+
+      <!--Lombok-->
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+      </dependency>
+
+      <!--JAXB-->
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>${jaxb-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-core</artifactId>
+        <version>${jaxb.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>${jaxb.version}</version>
+      </dependency>
+
+      <!--JSON-->
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${json.version}</version>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
 
   <build>
     <plugins>
